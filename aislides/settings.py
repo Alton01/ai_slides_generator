@@ -55,7 +55,7 @@ ROOT_URLCONF = 'aislides.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates', Path(__file__).resolve().parent / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
